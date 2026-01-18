@@ -1,0 +1,9 @@
+{
+  "name": "git-practical",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Frontend project using Node.js for CI automation",
+  "scripts": {
+    "start": "node src/scripts/nodeCheck.js"
+  }
+}
