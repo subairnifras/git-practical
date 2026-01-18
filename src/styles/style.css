@@ -1,0 +1,241 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 420px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 25px 45px rgba(0, 0, 0, 0.2),
+    inset 0 1px 1px rgba(255, 255, 255, 0.6);
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+
+h1 {
+  text-align: center;
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #c7d2fe;
+  outline: none;
+  margin-bottom: 12px;
+}
+
+#taskInput:focus {
+  border-color: #2563eb;
+}
+
+#addBtn {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#addBtn:hover {
+  background: #1e40af;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.filters button {
+  flex: 1;
+  margin: 0 4px;
+  padding: 8px;
+  background: #e0e7ff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #1e3a8a;
+  font-weight: 500;
+}
+
+.filters button:hover {
+  background: #c7d2fe;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f8fafc;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 5px solid #2563eb;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #6b7280;
+  border-left-color: #9ca3af;
+}
+
+li button {
+  background: #ef4444;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background: #b91c1c;
+}
+
+#counter {
+  text-align: center;
+  margin-top: 15px;
+  color: #1e40af;
+  font-weight: 500;
+}
+
+.task-time {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+#categorySelect {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #c7d2fe;
+  outline: none;
+  background: white;
+}
+
+.category {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.category.Work {
+  color: #2563eb;
+}
+
+.category.Personal {
+  color: #16a34a;
+}
+
+.category.Study {
+  color: #9333ea;
+}
+
+.container {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+li {
+  animation: slideIn 0.3s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+li.removing {
+  animation: fadeOut 0.3s ease forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
+
+button {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.filters button {
+  transition: background 0.3s, transform 0.2s;
+}
+
+.filters button.active {
+  background: #2563eb;
+  color: white;
+  transform: scale(1.05);
+}
+
+.daily-tracker {
+  margin-top: 15px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  text-align: center;
+  color: #1e40af;
+  font-weight: bold;
+}
+
