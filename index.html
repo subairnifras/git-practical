@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Todo App</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Todo List</h1>
+
+    <input type="text" id="taskInput" placeholder="Enter a task" />
+
+    <select id="categorySelect">
+      <option value="Work">Work</option>
+      <option value="Personal">Personal</option>
+      <option value="Study">Study</option>
+    </select>
+
+    <button id="addBtn">Add Task</button>
+
+    <div class="filters">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="active">Active</button>
+      <button data-filter="completed">Completed</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <p id="counter">0 tasks</p>
+
+    <div class="daily-tracker">
+      <h3>Today's Progress</h3>
+      <p id="dailyProgress">0 / 0 tasks completed</p>
+    </div>
+  </div>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
