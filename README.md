@@ -5,9 +5,9 @@
 -----------------------------              -------------------------------          ------------------------------------------------------
 
 ITBNM-2313-0052----------------------------NIFRAS SUBAIR----------------------------Basic HTML File , CI/CD integration , GitHub Actions,
-                                                                                   -HTML Modifications ( Partial ) , JavaScript modify
-                                                                                   -( Partial ) , Vercel Main
-
+------------------------------------------------------------------------------------HTML Modifications ( Partial ) , JavaScript modify
+------------------------------------------------------------------------------------( Partial ) , Vercel Main
+------------------------------------------------------------------------------------------------------------------------------------------
 ITBNM-2313-0070                            J RUWANSAN                               Main CSS Code Main , JavaScript Code Main , HTML file
                                                                                     Modification ( Partial ) , Github Push ,Clone, Pull
 
