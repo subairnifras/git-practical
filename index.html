@@ -1,24 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Todo App</title>
-  <link rel="stylesheet" href="src/styles/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Todo App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <div class="container">
-    <h1>Todo List</h1>
+    <div class="header">
+      <h1> My Tasks</h1>
+    </div>
 
-    <input type="text" id="taskInput" placeholder="Enter a task" />
+    <div class="stats">
+      <div class="stat-card">
+        <div class="stat-value" id="totalTasks">0</div>
+        <div class="stat-label">Total</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="completedTasks">0</div>
+        <div class="stat-label">Completed</div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+    </div>
 
-    <select id="categorySelect">
-      <option value="Work">Work</option>
-      <option value="Personal">Personal</option>
-      <option value="Study">Study</option>
-    </select>
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="What needs to be done?" />
+    </div>
+
+    <div class="controls">
+      <select id="categorySelect">
+        <option value="Work">💼 Work</option>
+        <option value="Personal">🏠 Personal</option>
+        <option value="Study">📚 Study</option>
+        <option value="Health">💪 Health</option>
+      </select>
+
+      <select id="prioritySelect">
+        <option value="low">Low Priority</option>
+        <option value="medium">Medium Priority</option>
+        <option value="high">High Priority</option>
+      </select>
+    </div>
 
     <button id="addBtn">Add Task</button>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="🔍 Search tasks..." />
+    </div>
 
     <div class="filters">
       <button data-filter="all" class="active">All</button>
@@ -28,14 +59,12 @@
 
     <ul id="taskList"></ul>
 
-    <p id="counter">0 tasks</p>
-
-    <div class="daily-tracker">
-      <h3>Today's Progress</h3>
-      <p id="dailyProgress">0 / 0 tasks completed</p>
+    <div class="bulk-actions">
+      <button id="completeAllBtn">✓ Complete All</button>
+      <button id="clearCompletedBtn">🗑 Clear Completed</button>
     </div>
   </div>
 
-  <script src="scripts/app.js/src/scripts"></script>
+  <script src="app.js"></script>
 </body>
 </html>
