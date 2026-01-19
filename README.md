@@ -10,7 +10,7 @@ This project focuses on strengthening core front-end development skills, includi
 | ------ | ------ |
 | NIFRAS S - ITBNM-2313-0052 | Basic HTML File , CI/CD integration , GitHub Actions , HTML Modifications ( Partial ) , JavaScript modify( Partial ) , Vercel Main |
 | J RUWANSAN - ITBNM-2313-0070 | Main CSS Code Main , JavaScript Code Main , HTML file Modification ( Partial ) , Github Push ,Clone, Pull |
-| R IMESHA  - ITBNM-2313-0052 | HTML Code Main , CSS Code Modifications ( Partial ) , JavaScript ( Partial ) , GitHub Push , Clone , Pull |
+| R IMESHA  - ITBNM-2313-0033 | HTML Code Main , CSS Code Modifications ( Partial ) , JavaScript ( Partial ) , GitHub Push , Clone , Pull |
 
 
 Our To-Do list project is Simple concept and low code complexity
