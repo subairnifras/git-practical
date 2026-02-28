@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    container_name: git-practical-app
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+    mem_limit: 256m
+    cpus: 0.5
