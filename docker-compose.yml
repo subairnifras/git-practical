@@ -7,4 +7,4 @@ services:
       NODE_ENV: production
     mem_limit: 256m
     cpus: 0.5
-    command: node src/server.js
+    command: node src/scripts/nodeCheck.js
