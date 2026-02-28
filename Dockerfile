@@ -1,21 +1,20 @@
-# Use official Node.js 20 Alpine image
-FROM node:20-alpine
+# Use Node.js 20
+FROM node:20
 
-# Set working directory
-WORKDIR /app
+# Create app directory
+WORKDIR /usr/src/app
 
-# Copy package files first (for caching)
+# Copy package.json and package-lock.json
 COPY package*.json ./
 
-# Install dependencies (if any)
-RUN npm install --production || true
+# Install dependencies
+RUN npm install --production
 
-# Copy rest of the project
+# Copy the rest of your app
 COPY . .
 
-# Create non-root user (security best practice)
-RUN addgroup -S appgroup && adduser -S appuser -G appgroup
-USER appuser
+# Expose port
+EXPOSE 3000
 
-# Run application
-CMD ["npm", "start"]
+# Start the server
+CMD ["node", "server.js"]
