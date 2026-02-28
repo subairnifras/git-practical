@@ -5,5 +5,8 @@
   "description": "Frontend project using Node.js for CI automation",
   "scripts": {
     "start": "node src/scripts/nodeCheck.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }
