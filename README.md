@@ -12,8 +12,8 @@ This project focuses on strengthening core front-end development skills, includi
 | J RUWANSAN - ITBNM-2313-0070 | Main CSS Code Main , JavaScript Code Main , HTML file Modification ( Partial ) , Github Push ,Clone, Pull |
 | R IMESHA  - ITBNM-2313-0033 | HTML Code Main , CSS Code Modifications ( Partial ) , JavaScript ( Partial ) , GitHub Push , Clone , Pull |
 
-Deployment Link ( Vercel ) - https://git-practical.vercel.app/
-Github Repository Link - https://github.com/subairnifras/git-practical.git
+- Deployment Link ( Vercel ) - https://git-practical.vercel.app/
+- Github Repository Link - https://github.com/subairnifras/git-practical.git
 
 
 Our To-Do list project is Simple concept and low code complexity
