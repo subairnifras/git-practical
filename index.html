@@ -3,52 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modern Todo App</title>
+  <title>Premium Todo App</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="src/styles/style.css">
 </head>
+
 <body>
+
   <div class="container">
+
     <div class="header">
-      <h1> My Tasks...</h1>
+      <h1> My Smart Tasks</h1>
+
+      <div class="top-controls">
+        <button id="themeToggle">🌙</button>
+        <input type="color" id="themeColor" value="#00c9a7">
+      </div>
     </div>
 
     <div class="stats">
       <div class="stat-card">
         <div class="stat-value" id="totalTasks">0</div>
-        <div class="stat-label">Total</div>
+        <div class="stat-label">Total Tasks</div>
       </div>
+
       <div class="stat-card">
         <div class="stat-value" id="completedTasks">0</div>
         <div class="stat-label">Completed</div>
-        <div class="progress-bar">
-          <div class="progress-fill" id="progressFill"></div>
-        </div>
       </div>
     </div>
 
+    <div class="progress-circle">0%</div>
+
     <div class="input-group">
-      <input type="text" id="taskInput" placeholder="What needs to be done?" />
+      <input type="text" id="taskInput" placeholder="What needs to be done?">
     </div>
 
     <div class="controls">
       <select id="categorySelect">
-        <option value="Work">💼 Work</option>
-        <option value="Personal">🏠 Personal</option>
-        <option value="Study">📚 Study</option>
-        <option value="Health">💪 Health</option>
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Study">Study</option>
+        <option value="Health">Health</option>
       </select>
 
       <select id="prioritySelect">
-        <option value="low">Low Priority</option>
-        <option value="medium">Medium Priority</option>
-        <option value="high">High Priority</option>
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
       </select>
+
+      <input type="date" id="dueDate">
     </div>
 
     <button id="addBtn">Add Task</button>
 
     <div class="search-box">
-      <input type="text" id="searchInput" placeholder="🔍 Search tasks..." />
+      <input type="text" id="searchInput" placeholder="🔍 Search tasks...">
     </div>
 
     <div class="filters">
@@ -62,10 +75,13 @@
     <div class="bulk-actions">
       <button id="completeAllBtn">✓ Complete All</button>
       <button id="clearCompletedBtn">🗑 Clear Completed</button>
+      <button id="downloadPdfBtn">Download Report PDF</button>
     </div>
+
   </div>
 
   <script src="src/scripts/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
 </body>
 </html>
