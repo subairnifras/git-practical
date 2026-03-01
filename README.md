@@ -44,12 +44,12 @@ We uses a number of Tech to work properly:
 And of course To-Do List itself is open source with a [public repository]()
  on GitHub.
 
-## INTERFACE OF A SITE
+# Interface of Website
 
-# Light Mode
+## Light Mode
 
 <img width="902" height="830" alt="image" src="https://github.com/subairnifras/git-practical/blob/c013b286cd7c285d7ec0294e7caf08cae3c03630/qwe4.png" />
 
-# Dark Mode
+## Dark Mode
 
 <img width="902" height="830" alt="image" src="https://github.com/subairnifras/git-practical/blob/c013b286cd7c285d7ec0294e7caf08cae3c03630/qwe3.png" />
